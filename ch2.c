@@ -22,8 +22,8 @@ int scanning(void)
 }
 int nameSurname(void)
 {
-    printf("Name\tSurname\n");
-    printf("Goktugh\tGulsoy");
+    puts("Name\tSurname");// :=printf("<string>\n")
+    puts("Goktugh\tGulsoy");
 }
 int main(void)
 {
