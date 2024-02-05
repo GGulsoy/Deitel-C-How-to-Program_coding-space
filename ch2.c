@@ -22,7 +22,7 @@ int scanning(void)
 }
 int nameSurname(void)
 {
-    puts("Name\tSurname");// :=printf("<string>\n")
+    puts("Name\tSurname");// := printf("<string>\n")
     puts("Goktugh\tGulsoy");
 }
 int main(void)
