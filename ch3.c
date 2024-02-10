@@ -11,6 +11,7 @@ int conditional(void){
     }
 
     puts(i >= 58 ? "why?" : "ok");
+    return 0;
 }
 
 int averager(void){
@@ -23,7 +24,7 @@ int averager(void){
         
     } while (current >= 0);
     printf("%f", (float) total / counter);
-    
+    return 0;
 }
 //left at figure 3.10
 
@@ -50,8 +51,10 @@ int fibonacci(){
         v1 += v2; printf("%d ", v1);
         v2 += v1; printf("%d ", v2);
     }
+    return 0;
 }
 
 int main(void){
-    unsignedInt();
+	fibonacci();
+	return 0;
 }
