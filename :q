@@ -14,9 +14,9 @@ int printing(void)
     \" Double quote. Insert a double-quote character in a string.
 */
 int inputSpecifiers(void){
-	printf("String: %s ", "ةوزظκμόκοδςшоцущдл");
-	printf("Char: %c ", 'a');//use '' for char type, not ""
-	printf("Float: %f \n", 2.25);
+	printf("String: %s ", "string");
+	printf("Char: %c ", 25);
+	printf("String: %f ", 2.25);
 	return 0;
 }
 
