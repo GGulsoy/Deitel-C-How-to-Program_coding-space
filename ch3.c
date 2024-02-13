@@ -26,7 +26,7 @@ int averager(void){
     printf("%f", (float) total / counter);
     return 0;
 }
-//left at figure 3.10
+
 
 //use %u to display unsigned int
 int unsignedInt(void){
@@ -41,15 +41,15 @@ int unsignedInt(void){
     printf("\n%d", variable3);
     return 0;
 }
-//securte versions:
+//secure versions:
 //scanf_s
 //printf_s
 
 int fibonacci(){
     unsigned short v1 = 0; unsigned short v2 = 1;
     while(v2 <= 10000){
-        v1 += v2; printf("%d ", v1);
-        v2 += v1; printf("%d ", v2);
+        v1 += v2; printf("%d\n ", v1);
+        v2 += v1; printf("%d\n ", v2);
     }
     return 0;
 }
