@@ -45,7 +45,35 @@ int unsignedInt(void){
 //scanf_s
 //printf_s
 
-int fibonacci(){
+int largest(void){
+	int current; int biggest = 0; int count = 1;
+	while(count <=10){
+		printf("\nEnter the non-negative i: ");
+		scanf("%d", &current);
+		if(current>=0 && current >=biggest){
+			biggest = current;
+			count++;
+		}
+		else if(current>=0){
+			count++;
+		}
+		else if(current < 0){
+			printf("\nPlease enter non-negative.");
+		}
+	}
+	printf("The Largest: %d\n", biggest);
+	return 0;
+	//observations:
+	//when an rational is entered, 
+	//the part after . is truncated
+	//and the loop is done without scanf
+	//when a string is entered, 
+	//the loop is done without scanf
+	//and 0 is printed as answer
+
+}
+
+int fibonacci(void){
     unsigned short v1 = 0; unsigned short v2 = 1;
     while(v2 <= 10000){
         v1 += v2; printf("%d\n ", v1);
@@ -55,6 +83,6 @@ int fibonacci(){
 }
 
 int main(void){
-	fibonacci();
+	largest();
 	return 0;
 }
