@@ -73,6 +73,34 @@ int largest(void){
 
 }
 
+int square(void){
+	int size;
+	printf("\nEnter size: ");
+	scanf("%d", &size);
+	puts("");
+
+	int count = 1;
+	while(count <= size){printf("*"); count++;}
+	puts(""); 
+
+	count = 1; 
+	int count2;
+	while(count <= size-2){
+		count2 = 1;
+		printf("*");
+		while(count2 <= size-2){
+			printf(" "); count2++;
+		}
+		printf("*"); 
+		puts(""); count++;	
+	}
+
+	count = 1;
+	while(count <= size){printf("*"); count++;}
+	puts("");
+	
+	return 0;
+}
 int fibonacci(void){
     unsigned short v1 = 0; unsigned short v2 = 1;
     while(v2 <= 10000){
@@ -82,7 +110,27 @@ int fibonacci(void){
     return 0;
 }
 
+int breakingBinary(void){
+	int binary;
+	printf("\nEnter binary ");
+	scanf("%d", &binary);
+
+	int step10 = 1; int step2 = 1;
+	while(binary > step10){
+		step10 *= 10; step2 *= 2;
+	}
+	step10 /= 10; step2 /= 2;
+	
+	int valueStep; int value = 0;
+	do{valueStep = binary / step10; value += valueStep*step2;
+	binary %= step10; step10 /= 10; step2 /= 2;}
+	while(binary != 0);
+
+	printf("Value: %d\n", value);
+	return 0;
+}
+
 int main(void){
-	largest();
+	breakingBinary();
 	return 0;
 }
