@@ -1,0 +1,12 @@
+long double %Lf
+double %f(printf)  %lf(scanf)
+float %f 
+unsigned long long int %llu 
+long long int %lld 
+unsigned long int %lu 
+long int %ld 
+unsigned int %u 
+int %d 
+unsigned short %hu 
+short %hd 
+char %c 
