@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int controlWhile(void){
 	int counter = 0;
@@ -43,14 +44,25 @@ int switchCase(void){
 	puts("");
 
 	//independant
-	int a; int b; int c;
-	a = b = c = 0;
+	int a; int b; int d;
+	a = b = d = 0;
 
 	return 0;
 }
 
+double euler(unsigned short steps){
+	unsigned int factorial = 1; double rtrn = 1;
+	for(unsigned short i = 0; i < steps; i++){
+		factorial *= (i+1);
+		rtrn += (double) 1 / factorial;
+	}
+	return rtrn;
+}
+
 int main(void){
-	switchCase(); 
+	for(unsigned short i = 1; i < 20; i++){
+		printf("%f\n", euler(i));
+	}
 	return 0;
 }
 
